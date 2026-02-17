@@ -13,4 +13,24 @@ function twoSum(nums, target) {
 }
 
 const result = twoSum([2, 7, 11, 15], 17);
-console.log(result);
+console.log(result); // [0, 3]
+
+
+
+//2
+function twoSum1(nums, target) {
+    const map = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        let complay = target - nums[i];
+
+        if (map.has(complay)) {
+            return [map.get(complay), i]
+        }
+
+        map.set(nums[i], i)
+    }
+    return null;
+}
+
+const result1 = twoSum1([2, 7, 11, 15], 17);
+console.log(result1);  // [0, 3]
