@@ -17,4 +17,4 @@ function marge(arr1, arr2) {
     return result.concat(arr1.slice(i)).concat(arr2.slice(j))
 }
 
-console.log(marge([1, 3, 5], [2, 4, 6, 8]));
+console.log(marge([1, 3, 5], [2, 4, 6, 8])); //Array(7) [ 1, 2, 3, 4, 5, 6, 8 ]
