@@ -9,7 +9,8 @@ function reverse(arr, start, end) {
     return arr;
 }
 
-console.log(reverse([1, 2, 3, 4, 5, 6, 7], 0, 6))
+console.log(reverse([1, 2, 3, 4, 5, 6, 7], 0, 6)) // Array(7) [ 7, 6, 5, 4, 3, 2, 1 ]
+
 
 function rotate(nums, k) {
     k = k % nums.length;
@@ -19,4 +20,4 @@ function rotate(nums, k) {
     return nums;
 }
 
-console.log(rotate([1, 2, 3, 4, 5, 6, 7], 3));
+console.log(rotate([1, 2, 3, 4, 5, 6, 7], 3)); // Array(7) [ 5, 6, 7, 1, 2, 3, 4 ]
