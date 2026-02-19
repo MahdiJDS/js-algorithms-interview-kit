@@ -13,6 +13,7 @@ console.log(reverse([1, 2, 3, 4, 5, 6, 7], 0, 6)) // Array(7) [ 7, 6, 5, 4, 3, 2
 
 
 function rotate(nums, k) {
+    if (nums.length === 0) return nums;
     k = k % nums.length;
     reverse(nums, 0, nums.length - 1);
     reverse(nums, 0, k - 1);
