@@ -13,6 +13,7 @@ function max(arr) {
 
     return maxC;
 }
+console.log(max([5, 4, 8, 2])) // min 8
 
 
 function min(arr) {
@@ -28,3 +29,4 @@ function min(arr) {
 
     return minC;
 }
+console.log(min([5, 4, 8, 2])) // 2
