@@ -13,3 +13,18 @@ function max(arr) {
 
     return maxC;
 }
+
+
+function min(arr) {
+    if (arr.length === 0) return null;
+
+    let minC = arr[0];
+
+    for (let i = 1; i < arr.length; i++) {
+        if (minC > arr[i]) {
+            minC = arr[i];
+        }
+    }
+
+    return minC;
+}
