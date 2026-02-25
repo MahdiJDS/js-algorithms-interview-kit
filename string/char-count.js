@@ -14,7 +14,7 @@ function count(str) {
     return strC;
 }
 
-console.log(count('program'))
+console.log(count('program')) // { p: 1, r: 2, o: 1, g: 1, a: 1, m: 1 }
 
 
 function maxch(obj) {
@@ -32,4 +32,4 @@ function maxch(obj) {
     return { count: maxC, char: maxh };
 }
 
-console.log(maxch(count('program')))
+console.log(maxch(count('program'))) // { count: 2, char: 'r' }
