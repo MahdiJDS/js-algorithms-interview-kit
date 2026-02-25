@@ -17,3 +17,19 @@ function count(str) {
 console.log(count('program'))
 
 
+function maxch(obj) {
+    if (Object.keys(obj).length === 0) return null;
+
+    let maxC = 0;
+    let maxh = '';
+
+    for (let ch in obj) {
+        if (maxC < obj[ch]) {
+            maxC = obj[ch];
+            maxh = ch;
+        }
+    }
+    return { count: maxC, char: maxh };
+}
+
+console.log(maxch(count('program')))
