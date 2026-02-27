@@ -16,4 +16,4 @@ function firstNonRepeatingChar(str) {
     return null;
 }
 
-console.log(firstNonRepeatingChar("aabbcde"));
+console.log(firstNonRepeatingChar("aabbcde")); // c
